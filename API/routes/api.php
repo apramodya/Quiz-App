@@ -16,3 +16,20 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Participant routes
+
+//insert
+Route::post('participant', 'ParticipantController@store');
+
+//update
+Route::put('participant', 'ParticipantController@store');
+
+
+//Question routes
+
+//get random 20 questions
+Route::get('questions', 'QuestionController@index');
+
+//get answer
+Route::get('answer/{id}', 'QuestionController@show');
