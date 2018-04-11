@@ -11,8 +11,7 @@ class QuestionController extends Controller {
 
 	public function index() {
 
-		$questions = Question::orderBy(DB::raw('RAND(100)'))->paginate(20);
-
+		$questions = Question::orderBy(DB::raw('RAND(100)'))->paginate(10);
 		return QuestionResource::collection($questions);
 	}
 

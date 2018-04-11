@@ -25,5 +25,4 @@ class QuestionResource extends JsonResource {
 			'answer'   => $this->answer
 		];
 	}
-
 }

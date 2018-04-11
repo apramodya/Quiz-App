@@ -28,7 +28,7 @@ Route::put('participant', 'ParticipantController@store');
 
 //Question routes
 
-//get random 20 questions
+//get random 10 questions
 Route::get('questions', 'QuestionController@index');
 
 //get answer
